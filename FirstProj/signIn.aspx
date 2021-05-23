@@ -9,7 +9,7 @@
         <h1> SIGN IN</h1>
         
         <div >
-          <form method="POST" action="/login">
+          <div>
             <div class = "text-box">
               <i class="fas fa-user"></i>
               <input type="text" autocomplete="off" autofocus  placeholder="Username" name="username" required />
@@ -20,7 +20,7 @@
             </div>
   
             <input type="submit" class="btn" value="Login">
-          </form>
+          </div>
         </div>
       </div>
     </div>
