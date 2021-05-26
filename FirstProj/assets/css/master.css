@@ -6,8 +6,7 @@ body{
     font-family: sans-serif;
     background-color: white;
     background-size: 100%;
-    
-
+    height: 100%;
 }
 
 /* navigaion */
@@ -53,8 +52,6 @@ body{
     font-family: 'Rubik', sans-serif;
 }
 
-
-
 .footer i {
     color:  brown;
 }
@@ -68,3 +65,39 @@ body{
     
 }
 
+.brand{
+    color: red !important;
+}
+
+.gebeta {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+.icons {
+    font-size: 20px;
+    color: orangered;
+}
+
+.follow {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sign a {
+    font-size: 16px;
+    color: rgb(214, 228, 153);
+    text-decoration: underline;
+}
+
+.footer {
+    margin-bottom: 0;
+}
+
+.rec-link {
+    text-decoration: underline !important;
+    font-weight: bold;
+    color: brown!important;
+    font-size: 16px;
+}

@@ -64,51 +64,45 @@
 }
 
 .veg {
-    top: 110.5%;
-    left: 4.2%;
-    padding: 0.15% 8.7%;
+    top: 87.2%;
+    left: 0%;
+    padding: 0.15% 12%;
+    width: 100%;
 }
 
 .non-veg {
-    top: 110.5%;
-    left: 35.1%;
-    padding: 0.15% 6.8%;
+    top: 87.2%;
+    left: 0%;
+    padding: 0% 12%;
+    width: 100%;
 }
 
 .b-fast {
-    top: 110.5%;
-    left: 66.3%;
-    padding: 0.15% 9.6%;
-}
-
-.lunch {
-    top: 157.8%;
-    left: 4.2%;
-    padding: 0.15% 11%;
-}
-
-.dinner {
-    top: 157.8%;
-    left: 35%;
-    padding: 0.15% 10.7%;
+    top: 87.2%;
+    left: 0;
+    padding: 0% 12%;
+    width: 100%;
 }
 
 .f-food {
-    top: 157.8%;
-    left: 66.2%;
+    top: 87%;
+    left: 0%;
     padding: 0.15% 9.5%;
+    width:100%;
 }
 
 .alcoholic {
-    top: 211.1%;
-    left: 4.2%;
+    top: 87%;
+    left: 0%;
     padding: 0.15% 9.6%;
+    width: 100%;
 }
 
 .n-alcoholic {
-    top: 211.1%;
-    left: 35%;
+    top: 87%;
+    left: 0%;
     padding: 0.15% 8.3%;
+    width:100%;
 }
 
 .food-imgs {
@@ -172,3 +166,4 @@
         padding: 0.15% 17%;
     }
 }
+

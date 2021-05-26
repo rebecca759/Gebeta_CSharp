@@ -73,9 +73,10 @@
     <Content Include="assets\css\master.css" />
     <Content Include="assets\css\recipe.css" />
     <Content Include="assets\css\signInUp.css" />
-    <Content Include="assets\css\style.css" />
+    <Content Include="assets\css\style_sidebar.css" />
     <Content Include="assets\images\kitfo.PNG" />
     <Content Include="assets\js\main.js" />
+    <Content Include="assets\css\style_user.css" />
     <Content Include="Bootstrap\js\bootstrap.bundle.min.js" />
     <Content Include="Bootstrap\css\bootstrap.min.css" />
     <Content Include="datatables\css\jquery.dataTables.min.css" />
@@ -106,7 +107,6 @@
     <Content Include="index.aspx" />
     <Content Include="recipe.aspx" />
     <Content Include="base.aspx" />
-    <Content Include="allrecipie.aspx" />
     <Content Include="chefRecipe.aspx" />
     <Content Include="category.aspx" />
     <Content Include="signIn.aspx" />
@@ -141,13 +141,6 @@
     </Compile>
     <Compile Include="base.aspx.designer.cs">
       <DependentUpon>base.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="allrecipie.aspx.cs">
-      <DependentUpon>allrecipie.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="allrecipie.aspx.designer.cs">
-      <DependentUpon>allrecipie.aspx</DependentUpon>
     </Compile>
     <Compile Include="chefRecipe.aspx.cs">
       <DependentUpon>chefRecipe.aspx</DependentUpon>

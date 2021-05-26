@@ -22,7 +22,7 @@
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda voluptate recusandae. Recusandae sapiente ducimus atque cumque, eum maiores corporis tempora repellat ad consectetur reiciendis quia quisquam alias temporibus doloremque?
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod cum provident, dolore error tempora perferendis deserunt nemo eos amet explicabo unde facilis cupiditate laborum nobis porro quisquam placeat fugit enim.
                   </p>
-                  <a href="#" class="btn btn-primary" id="btn">Get This Recipe</a>
+                  <a href="recipe.aspx" class="btn btn-primary" id="btn">Get This Recipe</a>
                 </div>
               </div></div>
             <div class=" col-xs-6 col-md-4 ">

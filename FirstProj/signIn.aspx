@@ -7,8 +7,6 @@
     <div class="center">
       <div class="login-box">
         <h1> SIGN IN</h1>
-        
-        <div >
           <div>
             <div class = "text-box">
               <i class="fas fa-user"></i>
@@ -21,7 +19,6 @@
   
             <input type="submit" class="btn" value="Login">
           </div>
-        </div>
       </div>
     </div>
   </div>

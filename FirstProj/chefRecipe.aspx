@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm5.aspx.cs" Inherits="FirstProj.WebForm5" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="chefRecipe.aspx.cs" Inherits="FirstProj.WebForm5" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <link rel="stylesheet" href="assets/css/chef.css">
     <title>Chef</title>
@@ -6,11 +6,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container mt-5 text-center">
         <h2 class="title">ADD YOUR RECIPE</h2>
-        <form action="">
+        <div>
             <div class="form-group" style="text-align: left">
                 <label class="inputs" for="RecipeTitile">Recipe title*</label>
                 <br>
-                <input class="inputs" type="text" class="form-control" name="" id="RecipeTitile" placeholder="title">
+                <input type="text" class="form-control inputs" name="" id="RecipeTitile" placeholder="title">
             </div>
             <div class="form-group" style="text-align: left">
                 <label class="inputs" for="RecipeIntro">Description*</label>
@@ -122,7 +122,7 @@
                              </select>
                     </div>
                 <br>
-                <input class="inputs" type="text" class="form-control" name="" id="steps" placeholder="step eg., Combine first three ingredients…">
+                <input type="text" class="form-control inputs" name="" id="steps" placeholder="step eg., Combine first three ingredients…">
             </div>
             <button style="margin-top: 3%; width: 30%;">ADD PREPARATION STEP</button>
 
@@ -198,7 +198,7 @@
 
            </div>
            
-        </form>
+        </div>
     </div>
     <div class="mb-5"></div>
     <!--container end-->

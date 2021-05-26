@@ -8209,10 +8209,10 @@ h1, h2, h3, h4, h5,
   border-bottom: 1px dashed #ddd;
   margin: 40px 0; }
 
-.wrapper {
+.wrapper2 {
   width: 100%; }
 
-#sidebar {
+#sidebar2 {
   min-width: 300px;
   max-width: 300px;
   background: #1d1919;
@@ -8220,37 +8220,37 @@ h1, h2, h3, h4, h5,
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
-  #sidebar.active {
+  #sidebar2.active {
     margin-left: -300px; }
-  #sidebar .logo {
+  #sidebar2 .logo {
     display: block;
     width: 120px;
     height: 120px;
     margin: 0 auto; }
-    #sidebar .logo span {
+    #sidebar2 .logo span {
       display: block; }
-  #sidebar ul.components {
+  #sidebar2 ul.components {
     padding: 0; }
-  #sidebar ul li {
+  #sidebar2 ul li {
     font-size: 16px; }
-    #sidebar ul li > ul {
+    #sidebar2 ul li > ul {
       margin-left: 10px; }
-      #sidebar ul li > ul li {
+      #sidebar2 ul li > ul li {
         font-size: 14px; }
-    #sidebar ul li a {
+    #sidebar2 ul li a {
       padding: 10px 0;
       display: block;
       color: rgba(255, 255, 255, 0.8);
       border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
-      #sidebar ul li a:hover {
+      #sidebar2 ul li a:hover {
         color: #f8b739; }
-    #sidebar ul li.active > a {
+    #sidebar2 ul li.active > a {
       background: transparent;
       color: #f8b739; }
   @media (max-width: 991.98px) {
-    #sidebar {
+    #sidebar2 {
       margin-left: -300px; }
-      #sidebar.active {
+      #sidebar2.active {
         margin-left: 0; } }
 
 a[data-toggle="collapse"] {
