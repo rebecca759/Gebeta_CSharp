@@ -12,24 +12,24 @@
         <form method="POST" action="/register">
           <div class = "text-box">
             <i class="fas fa-user"></i>
-            <asp:TextBox ID="TextBox1" placeholder="Full Name" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextBoxFName" placeholder="Full Name" runat="server"></asp:TextBox>
           </div>
             
           <div class = "text-box">
             <i class="fas fa-user"></i>
-            <asp:TextBox ID="TextBox2" placeholder="User Name" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextBoxUName" placeholder="User Name" runat="server"></asp:TextBox>
           </div>
           <div class = "text-box">
             <i class="fas fa-envelope"></i>
-            <asp:TextBox ID="TextBox3" placeholder="Email" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextBoxEmail" placeholder="Email" runat="server"></asp:TextBox>
           </div>
           <div class="form-group text-box">
             <i class="fas fa-user-lock"></i>
-              <asp:TextBox ID="TextBox4" placeholder="Password" runat="server" TextMode="Password"></asp:TextBox>
+              <asp:TextBox ID="TextBoxPass" placeholder="Password" runat="server" TextMode="Password"></asp:TextBox>
           </div>
           <div class="form-group text-box">
             <i class="fas fa-user"></i> 
-            <asp:DropDownList CssClass="text-box" ID="DropDownList1" runat="server">
+            <asp:DropDownList CssClass="text-box" ID="DropDownListUType" runat="server">
                 <asp:ListItem Text="User Type" Value="select" />
                 <asp:ListItem Text="Chef" Value="chef" />
                 <asp:ListItem Text="User" Value="user" />

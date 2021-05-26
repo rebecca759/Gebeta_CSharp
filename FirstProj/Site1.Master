@@ -41,8 +41,10 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light nav-custom">
           
         <div class="container-fluid">
-            <a href="base.aspx" class="ml-3 rec-link">Your Recipes</a>
+            <a href="userProfile.aspx" class="ml-3 rec-link">Your Recipes</a>
           <a style="margin:0 auto; font-size:25px;" class="brand navbar-brand pl-5 font-weight-bold" href="index.aspx">Gebeta</a>
+          <a class="mr-2 sign-nav" href="register.aspx">SignUp </a>| 
+          <a class="sign-nav ml-1" href="signIn.aspx">Login</a>
         </div>
           
       </nav>
@@ -91,7 +93,7 @@
         </asp:ContentPlaceHolder>
 
         <!-- footer -->
-        <div style="margin-top:10%;" class="pt-5  footer">
+        <div style="margin-top:20%;" class="pt-5 footer">
           <div class="container">
             <div class="row">
               <div class="col-lg-5 col-xs-12 about-company">

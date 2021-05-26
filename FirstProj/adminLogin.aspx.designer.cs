@@ -11,17 +11,8 @@ namespace FirstProj
 {
 
 
-    public partial class WebForm8
+    public partial class WebForm4
     {
-
-        /// <summary>
-        /// TextBoxFName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxFName;
 
         /// <summary>
         /// TextBoxUName control.
@@ -33,15 +24,6 @@ namespace FirstProj
         protected global::System.Web.UI.WebControls.TextBox TextBoxUName;
 
         /// <summary>
-        /// TextBoxEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxEmail;
-
-        /// <summary>
         /// TextBoxPass control.
         /// </summary>
         /// <remarks>
@@ -51,21 +33,12 @@ namespace FirstProj
         protected global::System.Web.UI.WebControls.TextBox TextBoxPass;
 
         /// <summary>
-        /// DropDownListUType control.
+        /// loginAdmin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownListUType;
-
-        /// <summary>
-        /// Button1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button loginAdmin;
     }
 }

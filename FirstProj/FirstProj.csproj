@@ -73,6 +73,7 @@
     <Content Include="assets\css\master.css" />
     <Content Include="assets\css\recipe.css" />
     <Content Include="assets\css\signInUp.css" />
+    <Content Include="assets\css\adminLogin.css" />
     <Content Include="assets\css\style_sidebar.css" />
     <Content Include="assets\images\kitfo.PNG" />
     <Content Include="assets\js\main.js" />
@@ -106,11 +107,12 @@
     <Content Include="Web.config" />
     <Content Include="index.aspx" />
     <Content Include="recipe.aspx" />
-    <Content Include="base.aspx" />
+    <Content Include="userProfile.aspx" />
     <Content Include="chefRecipe.aspx" />
     <Content Include="category.aspx" />
     <Content Include="signIn.aspx" />
     <Content Include="register.aspx" />
+    <Content Include="adminLogin.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -135,12 +137,12 @@
     <Compile Include="recipe.aspx.designer.cs">
       <DependentUpon>recipe.aspx</DependentUpon>
     </Compile>
-    <Compile Include="base.aspx.cs">
-      <DependentUpon>base.aspx</DependentUpon>
+    <Compile Include="userProfile.aspx.cs">
+      <DependentUpon>userProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="base.aspx.designer.cs">
-      <DependentUpon>base.aspx</DependentUpon>
+    <Compile Include="userProfile.aspx.designer.cs">
+      <DependentUpon>userProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="chefRecipe.aspx.cs">
       <DependentUpon>chefRecipe.aspx</DependentUpon>
@@ -169,6 +171,13 @@
     </Compile>
     <Compile Include="register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminLogin.aspx.cs">
+      <DependentUpon>adminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminLogin.aspx.designer.cs">
+      <DependentUpon>adminLogin.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
