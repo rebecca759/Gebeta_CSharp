@@ -60,3 +60,7 @@
 .select-width {
     width: 100%;
 }
+
+#invalid {
+    display:none;
+}

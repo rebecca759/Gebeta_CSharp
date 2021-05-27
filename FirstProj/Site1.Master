@@ -41,10 +41,18 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light nav-custom">
           
         <div class="container-fluid">
-            <a href="userProfile.aspx" class="ml-3 rec-link">Your Recipes</a>
+            &nbsp; <asp:LinkButton CssClass="ml-3 rec-link" ID="recipebtn" runat="server" Visible="False" OnClick="recipebtn_Click">Your Recipes</asp:LinkButton>
+
           <a style="margin:0 auto; font-size:25px;" class="brand navbar-brand pl-5 font-weight-bold" href="index.aspx">Gebeta</a>
-          <a class="mr-2 sign-nav" href="register.aspx">SignUp </a>| 
-          <a class="sign-nav ml-1" href="signIn.aspx">Login</a>
+          
+          <asp:LinkButton CssClass="mr-2 sign-nav" ID="signUpbtn" runat="server" OnClick="signUpbtn_Click">SignUp | </asp:LinkButton>
+          
+          <asp:LinkButton CssClass="sign-nav ml-1 mr-2" ID="signInbtn" runat="server" OnClick="signInbtn_Click">Login  </asp:LinkButton>
+           
+          <asp:LinkButton CssClass="sign-nav ml-1 mr-2" ID="logoutbtn" runat="server" OnClick="logoutbtn_Click" Visible="False">Logout | </asp:LinkButton>
+          
+          <asp:LinkButton CssClass="sign-nav ml-1" ID="userbtn" runat="server" Visible="False">Hello User</asp:LinkButton>
+          
         </div>
           
       </nav>

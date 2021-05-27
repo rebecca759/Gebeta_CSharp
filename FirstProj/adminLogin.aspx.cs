@@ -35,8 +35,13 @@ namespace FirstProj
                 {
                     while (dr.Read())
                     {
-                        Response.Write("<script>alert('" + dr.GetValue(2).ToString() + "');</script>");
+                        //Response.Write("<script>alert('" + dr.GetValue(2).ToString() + "');</script>");
+                        //session variables
+                        Session["username"] = dr.GetValue(1).ToString();
+                        Session["role"] = "admin";
                     }
+                    //for now - homepage has to change to admin dashboard
+                    Response.Redirect("homepage.aspx");
                 }
                 else
                 {

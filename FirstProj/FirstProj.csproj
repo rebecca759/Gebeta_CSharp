@@ -107,12 +107,13 @@
     <Content Include="Web.config" />
     <Content Include="index.aspx" />
     <Content Include="recipe.aspx" />
-    <Content Include="userProfile.aspx" />
+    <Content Include="userProfile_all.aspx" />
     <Content Include="chefRecipe.aspx" />
     <Content Include="category.aspx" />
     <Content Include="signIn.aspx" />
     <Content Include="register.aspx" />
     <Content Include="adminLogin.aspx" />
+    <Content Include="userProfile_favs.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -137,12 +138,12 @@
     <Compile Include="recipe.aspx.designer.cs">
       <DependentUpon>recipe.aspx</DependentUpon>
     </Compile>
-    <Compile Include="userProfile.aspx.cs">
-      <DependentUpon>userProfile.aspx</DependentUpon>
+    <Compile Include="userProfile_all.aspx.cs">
+      <DependentUpon>userProfile_all.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="userProfile.aspx.designer.cs">
-      <DependentUpon>userProfile.aspx</DependentUpon>
+    <Compile Include="userProfile_all.aspx.designer.cs">
+      <DependentUpon>userProfile_all.aspx</DependentUpon>
     </Compile>
     <Compile Include="chefRecipe.aspx.cs">
       <DependentUpon>chefRecipe.aspx</DependentUpon>
@@ -178,6 +179,13 @@
     </Compile>
     <Compile Include="adminLogin.aspx.designer.cs">
       <DependentUpon>adminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userProfile_favs.aspx.cs">
+      <DependentUpon>userProfile_favs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userProfile_favs.aspx.designer.cs">
+      <DependentUpon>userProfile_favs.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="signIn.aspx.cs" Inherits="FirstProj.WebForm7" %>
+﻿ <%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="signIn.aspx.cs" Inherits="FirstProj.WebForm7" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" href="./assets/css/signInUp.css">
     <title>Sign in</title>
@@ -8,8 +8,11 @@
     <div class="center">
       <div class="login-box">
         <h1> SIGN IN</h1>
+          
           <div>
+              
             <div class = "text-box">
+            <!--<p id="invalid" runat="server">Invalid Credentials!</p>-->
               <i class="fas fa-user"></i>
                 <asp:TextBox ID="TextBoxUName" placeholder="Username" runat="server"></asp:TextBox>
             </div>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="userProfile.aspx.cs" Inherits="FirstProj.WebForm3" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="userProfile_all.aspx.cs" Inherits="FirstProj.WebForm3" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">	
@@ -14,27 +14,12 @@
           
 	        <ul class="list-unstyled components mb-5">
 	          <li class="active">
-	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">All Recipe</a>
+	            <a href="userProfile_all.aspx">All Recipes</a>
 	           
 	          </li>
             
 	          <li>
-              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Collection</a>
-              <ul class="collapse list-unstyled" id="pageSubmenu">
-                <li>
-                    <a href="#">Page 1</a>
-                </li>
-                <li>
-                    <a href="#">Page 2</a>
-                </li>
-                <li>
-                    <a href="#">Page 3</a>
-                </li>
-               
-              </ul>
-              <li>
-                <a href="#">+new collection</a>
-	          </li>
+              <a href="userProfile_favs.aspx">Favorites</a>
 	        </ul>
 
 	      </div>
@@ -44,6 +29,7 @@
         <!-- Page Content  -->
       <div id="content" class="pl-4 p-md-5">
 
+        <asp:LinkButton CssClass="" ID="add_recipe" runat="server">Add Recipe</asp:LinkButton>
 
         <div style="margin-left:22%;" class="jumbotron jumbotron-fluid w-75">
             <div class="container mt-3 mb-3 text-center">

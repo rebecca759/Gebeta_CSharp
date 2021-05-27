@@ -33,12 +33,18 @@ namespace FirstProj
                 {
                     while (dr.Read())
                     {
-                        Response.Write("<script>alert('"+dr.GetValue(1).ToString()+"');</script>");
+                        Response.Write("<script>alert('Login Successful');</script>");
+                        //session variables
+                        Session["username"] = dr.GetValue(2).ToString();
+                        Session["fullname"] = dr.GetValue(1).ToString();
+                        Session["usertype"] = dr.GetValue(5).ToString();
+                        Session["role"] = "user";
                     }
+                    Response.Redirect("index.aspx");
                 }
                 else
                 {
-                    Response.Write("<script>alert('Invalid credentials');</script>");
+                    Response.Write("Invalid credentials");
                 }
             }
             catch (Exception ex)
