@@ -11,7 +11,34 @@ namespace FirstProj
 {
 
 
-    public partial class WebForm3
+    public partial class WebForm9
     {
+
+        /// <summary>
+        /// all_recipes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton all_recipes;
+
+        /// <summary>
+        /// FavoritesButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton FavoritesButton;
+
+        /// <summary>
+        /// add_recipe control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor add_recipe;
     }
 }

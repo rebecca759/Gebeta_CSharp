@@ -34,10 +34,6 @@ namespace FirstProj
                     userbtn.Text = "Hello " + Session["username"].ToString();   ; // hello user link button
                 }
 
-                else if (Session["role"].Equals("user"))
-                {
-                    //TO-DO
-                }
             }
             catch (Exception ex)
             {
@@ -69,11 +65,20 @@ namespace FirstProj
             logoutbtn.Visible = false; //logout link button
             userbtn.Visible = false; // hello user link button
             recipebtn.Visible = false; //your recipes link button
+            Response.Redirect("index.aspx");
         }
 
         protected void recipebtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("userProfile_all.aspx");
+            if (Session["usertype"].ToString() == "user")
+            {
+                Response.Redirect("userProfile_all.aspx");
+            }
+            else if (Session["usertype"].ToString() == "chef")
+            {
+                Response.Redirect("userProfile_favs.aspx");
+            }
+            
         }
     }
 }

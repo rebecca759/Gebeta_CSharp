@@ -107,3 +107,12 @@ body{
     font-size: 18px;
     color: lightslategray;
 }
+
+.mar-l {
+    padding-left: 155%;
+}
+
+.myFavImg {
+    width: 90%;
+    height: 400px;
+}

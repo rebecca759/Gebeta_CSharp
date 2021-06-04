@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="FirstProj.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="FirstProj.Site1"  %>
 
 <!DOCTYPE html>
 
@@ -78,7 +78,7 @@
             <a href="category.aspx"><span class="fa fa-user mr-3"></span> Foods</a>
           </li>
           <li>
-          <a href="category.aspx"><span class="fa fa-briefcase mr-3"></span> Drinks</a>
+          <a href="categoryDrinks.aspx"><span class="fa fa-briefcase mr-3"></span> Drinks</a>
           </li>
           
           

@@ -12,7 +12,7 @@
           <div>
               
             <div class = "text-box">
-            <!--<p id="invalid" runat="server">Invalid Credentials!</p>-->
+            <p class="invalid" id="invalid_cred" runat="server" visible="false">Invalid Credentials!</p>
               <i class="fas fa-user"></i>
                 <asp:TextBox ID="TextBoxUName" placeholder="Username" runat="server"></asp:TextBox>
             </div>

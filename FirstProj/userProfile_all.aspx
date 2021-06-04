@@ -14,12 +14,12 @@
           
 	        <ul class="list-unstyled components mb-5">
 	          <li class="active">
-	            <a href="userProfile_all.aspx">All Recipes</a>
+	            <asp:LinkButton ID="all_recipes" runat="server" OnClick="AllRecipe_Click">All Recipes</asp:LinkButton>
 	           
 	          </li>
             
 	          <li>
-              <a href="userProfile_favs.aspx">Favorites</a>
+                  <asp:LinkButton ID="FavoritesButton" runat="server" OnClick="FavoritesButton_Click">Your Collections</asp:LinkButton>
 	        </ul>
 
 	      </div>
@@ -29,27 +29,12 @@
         <!-- Page Content  -->
       <div id="content" class="pl-4 p-md-5">
 
-        <asp:LinkButton CssClass="" ID="add_recipe" runat="server">Add Recipe</asp:LinkButton>
-
-        <div style="margin-left:22%;" class="jumbotron jumbotron-fluid w-75">
-            <div class="container mt-3 mb-3 text-center">
-              <form action="/search" method="POST">
-                  <input type="text" name="name" placeholder="search a recipie" class="form-control">
-                  <input type="submit" class="d-grid gap-2 col-6 mx-auto btn btn-primary mt-2" value="Search">
-                </form>
-                </div>
-                </div>
-          </div>
-            <!-- {% for row in data %}
-            <a href="/book/{{row[1]}}"><div class="jumbotron jumbotron-fluid">
-              <div class="container text-center shadow-lg p-3 mb-5 bg-white rounded">
-              <p class="lead fw-bold pt-5">{{ row[2] }} | {{ row[3] }}</p>
-              <p class="lead pb-5" style="font-size: 15px;">Published On {{ row[4] }} | ISBN {{ row[1] }}</p>
-              <button type="button" class="btn btn-primary">get recepie</button>
-
-                
-            </div>
-            </div></a> -->
-
-        
+        <asp:LinkButton CssClass="" ID="add_recipe" runat="server" Visible="false" OnClick="add_recipe_Click">Add Recipe</asp:LinkButton>
+          <div style="margin-left:22%;" class="container">
+              <div class="row">
+                   <%=getAllRecipes()%>
+              </div>
+          </div> 
+         
+    <script src="./assets/js/all.js"></script>        
 </asp:Content>

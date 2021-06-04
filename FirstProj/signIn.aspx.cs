@@ -29,22 +29,27 @@ namespace FirstProj
                 }
                 SqlCommand cmd = new SqlCommand("SELECT * from user_table where user_name='"+TextBoxUName.Text.Trim()+"' AND password='"+ TextBoxPass.Text.Trim() + "'", con);
                 SqlDataReader dr = cmd.ExecuteReader();
+
+                
                 if (dr.HasRows)
                 {
                     while (dr.Read())
                     {
-                        Response.Write("<script>alert('Login Successful');</script>");
+                        invalid_cred.Visible = false;
+                        //Response.Write("<script>alert('Login Successful');</script>");
                         //session variables
                         Session["username"] = dr.GetValue(2).ToString();
                         Session["fullname"] = dr.GetValue(1).ToString();
                         Session["usertype"] = dr.GetValue(5).ToString();
+                        Session["user_id"] = dr.GetValue(0).ToString();
                         Session["role"] = "user";
                     }
                     Response.Redirect("index.aspx");
                 }
                 else
                 {
-                    Response.Write("Invalid credentials");
+                    invalid_cred.Visible = true;
+                    //Response.Write("Invalid credentials");
                 }
             }
             catch (Exception ex)

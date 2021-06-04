@@ -41,11 +41,12 @@ namespace FirstProj
                         Session["role"] = "admin";
                     }
                     //for now - homepage has to change to admin dashboard
-                    Response.Redirect("homepage.aspx");
+                    Response.Redirect("admin_dashboard.aspx");
                 }
                 else
                 {
-                    Response.Write("<script>alert('Invalid credentials');</script>");
+                    invalid_cred.Visible = true;
+                    //Response.Write("Invalid credentials");
                 }
             }
             catch (Exception ex)

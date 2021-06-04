@@ -24,7 +24,18 @@ namespace FirstProj
         {
             if (checkMemberExists())
             {
-                Response.Write("<script>alert('Member Already Exist with this username, try another username');</script>");
+                ExistedID.Visible = true;
+                emptyID.Visible = false;
+                successID.Visible = false;
+                // Response.Write("<script>alert('Member Already Exist with this username, try another username');</script>");
+            }
+            else if (checkEmpty(TextBoxFName.Text.Trim(), TextBoxUName.Text.Trim(), TextBoxEmail.Text.Trim(), TextBoxPass.Text.Trim(), DropDownListUType.SelectedItem.Value))
+            {
+                ExistedID.Visible = false;
+                emptyID.Visible = true;
+                successID.Visible = false;
+                // Response.Write("<script>alert('every boxes should be filled!!');</script>");
+
             }
             else
             {
@@ -59,7 +70,8 @@ namespace FirstProj
                 }
 
                 con.Close();
-                Response.Write("<script>alert('Sign up Successful. Go to user Login to Login');</script>");
+         
+                //Response.Write("<script>alert('Sign up Successful. Go to user Login to Login');</script>");
             }
             catch (Exception ex)
             {
@@ -68,8 +80,17 @@ namespace FirstProj
             }
             
         }
+        bool checkEmpty(string Fname,string Uname,string email,string password,string Utype)
+        {
+            if (Fname == "" || Uname == "" || email == "" || password == "" || Utype == "" )
+            {
+                return true;
+            }
+            return false;
+        }
         void signUpNewMember()
         {
+            
             //Response.Write("<script>alert('Testing');</script>");
             try
             {
@@ -82,6 +103,8 @@ namespace FirstProj
                 SqlCommand cmd = new SqlCommand("INSERT INTO user_table(full_name,user_name,email,password,user_type) " +
                     "values(@full_name,@user_name,@email,@password,@user_type)", con);
 
+
+
                 cmd.Parameters.AddWithValue("@full_name", TextBoxFName.Text.Trim());
                 cmd.Parameters.AddWithValue("@user_name", TextBoxUName.Text.Trim());
                 cmd.Parameters.AddWithValue("@email", TextBoxEmail.Text.Trim());
@@ -90,7 +113,10 @@ namespace FirstProj
 
                 cmd.ExecuteNonQuery();
                 con.Close();
-                Response.Write("<script>alert('Sign up Successful. Go to user Login to Login');</script>");
+                ExistedID.Visible = false;
+                emptyID.Visible = false;
+                successID.Visible = true;
+                // Response.Write("<script>alert('Sign up Successful. Go to user Login to Login');</script>");
             }
             catch (Exception ex)
             {

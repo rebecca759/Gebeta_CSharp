@@ -8286,3 +8286,9 @@ a[data-toggle="collapse"] {
 
 .footer p {
   color: rgba(255, 255, 255, 0.5); }
+
+.myFavRow {
+    margin-left: 15%;
+    width: 100%;
+    background-color: rgb(255, 246, 235);
+}
